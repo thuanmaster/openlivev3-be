@@ -1,0 +1,429 @@
+version: "3.3"
+
+services:
+  api:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: apiService/api
+      PORT: 4100
+    depends_on:
+      - nats
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.api-gw.rule=PathPrefix(`/`)"
+      - "traefik.http.services.api-gw.loadbalancer.server.port=4000"
+    networks:
+      - internal
+  blockchain:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: blockchainService/blockchain
+    depends_on:
+      - nats
+    networks:
+      - internal
+  chainWalletAdmin:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: blockchainService/chainWalletAdmin
+    depends_on:
+      - nats
+    networks:
+      - internal
+  chainWallet:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: blockchainService/chainWallet
+    depends_on:
+      - nats
+    networks:
+      - internal
+  transaction:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: transactionService/transaction
+    depends_on:
+      - nats
+    networks:
+      - internal
+  transactionCode:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: transactionService/transactionCode
+    depends_on:
+      - nats
+    networks:
+      - internal
+  transactionTemp:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: transactionService/transactionTemp
+    depends_on:
+      - nats
+    networks:
+      - internal
+  transactionAdmin:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: transactionService/transactionAdmin
+    depends_on:
+      - nats
+    networks:
+      - internal
+  country:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: countryService/country
+    depends_on:
+      - nats
+    networks:
+      - internal
+  handleTransactionTemp:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: cronjobService/handleTransactionTemp
+    depends_on:
+      - nats
+    networks:
+      - internal
+  cronGetRate:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: cronjobService/getRate
+    depends_on:
+      - nats
+    networks:
+      - internal
+  currency:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: currencyService/currency
+    depends_on:
+      - nats
+    networks:
+      - internal
+  currencyAttr:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: currencyService/currencyAttr
+    depends_on:
+      - nats
+    networks:
+      - internal
+  customers:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: customerService/customer
+    depends_on:
+      - nats
+    networks:
+      - internal
+  customerCode:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: customerService/customerCode
+    depends_on:
+      - nats
+    networks:
+      - internal
+  customerKyc:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: customerService/customerKyc
+    depends_on:
+      - nats
+    networks:
+      - internal
+  customerProfile:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: customerService/customerProfile
+    depends_on:
+      - nats
+    networks:
+      - internal
+  customerToken:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: customerService/customerToken
+    depends_on:
+      - nats
+    networks:
+      - internal
+  customerHistory:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: customerService/customerHistory
+    depends_on:
+      - nats
+    networks:
+      - internal
+  customerAdmin:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: customerService/customerAdmin
+    depends_on:
+      - nats
+    networks:
+      - internal
+  mail:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: mailService/mail
+    depends_on:
+      - nats
+    networks:
+      - internal
+  wallet:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: walletService/wallet
+    depends_on:
+      - nats
+    networks:
+      - internal
+  walletChain:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: walletService/walletChain
+    depends_on:
+      - nats
+    networks:
+      - internal
+  walletAdmin:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: walletService/walletAdmin
+    depends_on:
+      - nats
+    networks:
+      - internal
+  transactionQueue:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: queueService/transactionQueue
+    depends_on:
+      - nats
+    networks:
+      - internal
+  withdrawQueue:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: queueService/withdrawQueue
+    depends_on:
+      - nats
+    networks:
+      - internal
+  settingService:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: settingService/setting
+    depends_on:
+      - nats
+    networks:
+      - internal
+  fileService:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: fileService/file
+    depends_on:
+      - nats
+    networks:
+      - internal
+  userService:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: userService/user
+    depends_on:
+      - nats
+    networks:
+      - internal
+  userTokenService:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: userService/userToken
+    depends_on:
+      - nats
+    networks:
+      - internal
+  reportService:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: reportService/report
+    depends_on:
+      - nats
+    networks:
+      - internal
+  hookMoralis:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: hookService/hookMoralis
+    depends_on:
+      - nats
+    networks:
+      - internal
+  staticData:
+    build:
+      context: .
+    image: collabrx-backend
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: staticService/staticData
+    depends_on:
+      - nats
+    networks:
+      - internal
+  nats:
+    image: nats:2
+    networks:
+      - internal
+
+  traefik:
+    image: traefik:v2.1
+    command:
+      - "--api.insecure=true" # Don't do that in production!
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+    ports:
+      - 4000:80
+      - 4001:8080
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    networks:
+      - internal
+      - default
+
+networks:
+  internal:
+
+volumes:
+  data:

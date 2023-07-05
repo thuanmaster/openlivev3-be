@@ -1,0 +1,2418 @@
+[{
+  "_id": {
+    "$oid": "622f7b4cf5857a5a08751c03"
+  },
+  "code": "VN",
+  "title": "Viet Nam",
+  "phone_code": "84"
+},{
+  "_id": {
+    "$oid": "6259cedaee946473c8ab54e9"
+  },
+  "code": "AF",
+  "title": "Afghanistan",
+  "phone_code": "+93",
+  "createdAt": "1650052826",
+  "updatedAt": "1650052826",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedaee946473c8ab54ea"
+  },
+  "code": "AX",
+  "title": "Aland Islands",
+  "phone_code": "+358",
+  "createdAt": "1650052826",
+  "updatedAt": "1650052826",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedaee946473c8ab54eb"
+  },
+  "code": "AL",
+  "title": "Albania",
+  "phone_code": "+355",
+  "createdAt": "1650052826",
+  "updatedAt": "1650052826",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedaee946473c8ab54ec"
+  },
+  "code": "DZ",
+  "title": "Algeria",
+  "phone_code": "+213",
+  "createdAt": "1650052826",
+  "updatedAt": "1650052826",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedaee946473c8ab54ed"
+  },
+  "code": "AS",
+  "title": "AmericanSamoa",
+  "phone_code": "+1684",
+  "createdAt": "1650052826",
+  "updatedAt": "1650052826",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedaee946473c8ab54ee"
+  },
+  "code": "AD",
+  "title": "Andorra",
+  "phone_code": "+376",
+  "createdAt": "1650052826",
+  "updatedAt": "1650052826",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedaee946473c8ab54ef"
+  },
+  "code": "AO",
+  "title": "Angola",
+  "phone_code": "+244",
+  "createdAt": "1650052826",
+  "updatedAt": "1650052826",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedaee946473c8ab54f0"
+  },
+  "code": "AI",
+  "title": "Anguilla",
+  "phone_code": "+1264",
+  "createdAt": "1650052826",
+  "updatedAt": "1650052826",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedaee946473c8ab54f1"
+  },
+  "code": "AQ",
+  "title": "Antarctica",
+  "phone_code": "+672",
+  "createdAt": "1650052826",
+  "updatedAt": "1650052826",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedaee946473c8ab54f2"
+  },
+  "code": "AG",
+  "title": "Antigua and Barbuda",
+  "phone_code": "+1268",
+  "createdAt": "1650052826",
+  "updatedAt": "1650052826",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedaee946473c8ab54f3"
+  },
+  "code": "AR",
+  "title": "Argentina",
+  "phone_code": "+54",
+  "createdAt": "1650052826",
+  "updatedAt": "1650052826",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab54f4"
+  },
+  "code": "AM",
+  "title": "Armenia",
+  "phone_code": "+374",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab54f5"
+  },
+  "code": "AW",
+  "title": "Aruba",
+  "phone_code": "+297",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab54f6"
+  },
+  "code": "AU",
+  "title": "Australia",
+  "phone_code": "+61",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab54f7"
+  },
+  "code": "AT",
+  "title": "Austria",
+  "phone_code": "+43",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab54f8"
+  },
+  "code": "AZ",
+  "title": "Azerbaijan",
+  "phone_code": "+994",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab54f9"
+  },
+  "code": "BS",
+  "title": "Bahamas",
+  "phone_code": "+1242",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab54fa"
+  },
+  "code": "BH",
+  "title": "Bahrain",
+  "phone_code": "+973",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab54fb"
+  },
+  "code": "BD",
+  "title": "Bangladesh",
+  "phone_code": "+880",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab54fc"
+  },
+  "code": "BB",
+  "title": "Barbados",
+  "phone_code": "+1246",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab54fd"
+  },
+  "code": "BY",
+  "title": "Belarus",
+  "phone_code": "+375",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab54fe"
+  },
+  "code": "BE",
+  "title": "Belgium",
+  "phone_code": "+32",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab54ff"
+  },
+  "code": "BZ",
+  "title": "Belize",
+  "phone_code": "+501",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab5500"
+  },
+  "code": "BJ",
+  "title": "Benin",
+  "phone_code": "+229",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab5501"
+  },
+  "code": "BM",
+  "title": "Bermuda",
+  "phone_code": "+1441",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab5502"
+  },
+  "code": "BT",
+  "title": "Bhutan",
+  "phone_code": "+975",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab5503"
+  },
+  "code": "BO",
+  "title": "Bolivia, Plurinational State of",
+  "phone_code": "+591",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab5504"
+  },
+  "code": "BA",
+  "title": "Bosnia and Herzegovina",
+  "phone_code": "+387",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedbee946473c8ab5505"
+  },
+  "code": "BW",
+  "title": "Botswana",
+  "phone_code": "+267",
+  "createdAt": "1650052827",
+  "updatedAt": "1650052827",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab5506"
+  },
+  "code": "BR",
+  "title": "Brazil",
+  "phone_code": "+55",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab5507"
+  },
+  "code": "IO",
+  "title": "British Indian Ocean Territory",
+  "phone_code": "+246",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab5508"
+  },
+  "code": "BN",
+  "title": "Brunei Darussalam",
+  "phone_code": "+673",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab5509"
+  },
+  "code": "BG",
+  "title": "Bulgaria",
+  "phone_code": "+359",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab550a"
+  },
+  "code": "BF",
+  "title": "Burkina Faso",
+  "phone_code": "+226",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab550b"
+  },
+  "code": "BI",
+  "title": "Burundi",
+  "phone_code": "+257",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab550c"
+  },
+  "code": "KH",
+  "title": "Cambodia",
+  "phone_code": "+855",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab550d"
+  },
+  "code": "CM",
+  "title": "Cameroon",
+  "phone_code": "+237",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab550e"
+  },
+  "code": "CA",
+  "title": "Canada",
+  "phone_code": "+1",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab550f"
+  },
+  "code": "CV",
+  "title": "Cape Verde",
+  "phone_code": "+238",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab5510"
+  },
+  "code": "KY",
+  "title": "Cayman Islands",
+  "phone_code": "+ 345",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab5511"
+  },
+  "code": "CF",
+  "title": "Central African Republic",
+  "phone_code": "+236",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab5512"
+  },
+  "code": "TD",
+  "title": "Chad",
+  "phone_code": "+235",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab5513"
+  },
+  "code": "CL",
+  "title": "Chile",
+  "phone_code": "+56",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab5514"
+  },
+  "code": "CN",
+  "title": "China",
+  "phone_code": "+86",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab5515"
+  },
+  "code": "CX",
+  "title": "Christmas Island",
+  "phone_code": "+61",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab5516"
+  },
+  "code": "CC",
+  "title": "Cocos (Keeling) Islands",
+  "phone_code": "+61",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab5517"
+  },
+  "code": "CO",
+  "title": "Colombia",
+  "phone_code": "+57",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedcee946473c8ab5518"
+  },
+  "code": "KM",
+  "title": "Comoros",
+  "phone_code": "+269",
+  "createdAt": "1650052828",
+  "updatedAt": "1650052828",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab5519"
+  },
+  "code": "CG",
+  "title": "Congo",
+  "phone_code": "+242",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab551a"
+  },
+  "code": "CD",
+  "title": "Congo, The Democratic Republic of the Congo",
+  "phone_code": "+243",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab551b"
+  },
+  "code": "CK",
+  "title": "Cook Islands",
+  "phone_code": "+682",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab551c"
+  },
+  "code": "CR",
+  "title": "Costa Rica",
+  "phone_code": "+506",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab551d"
+  },
+  "code": "CI",
+  "title": "Cote d'Ivoire",
+  "phone_code": "+225",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab551e"
+  },
+  "code": "HR",
+  "title": "Croatia",
+  "phone_code": "+385",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab551f"
+  },
+  "code": "CU",
+  "title": "Cuba",
+  "phone_code": "+53",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab5520"
+  },
+  "code": "CY",
+  "title": "Cyprus",
+  "phone_code": "+357",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab5521"
+  },
+  "code": "CZ",
+  "title": "Czech Republic",
+  "phone_code": "+420",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab5522"
+  },
+  "code": "DK",
+  "title": "Denmark",
+  "phone_code": "+45",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab5523"
+  },
+  "code": "DJ",
+  "title": "Djibouti",
+  "phone_code": "+253",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab5524"
+  },
+  "code": "DM",
+  "title": "Dominica",
+  "phone_code": "+1767",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab5525"
+  },
+  "code": "DO",
+  "title": "Dominican Republic",
+  "phone_code": "+1849",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab5526"
+  },
+  "code": "EC",
+  "title": "Ecuador",
+  "phone_code": "+593",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab5527"
+  },
+  "code": "EG",
+  "title": "Egypt",
+  "phone_code": "+20",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab5528"
+  },
+  "code": "SV",
+  "title": "El Salvador",
+  "phone_code": "+503",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab5529"
+  },
+  "code": "GQ",
+  "title": "Equatorial Guinea",
+  "phone_code": "+240",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259ceddee946473c8ab552a"
+  },
+  "code": "ER",
+  "title": "Eritrea",
+  "phone_code": "+291",
+  "createdAt": "1650052829",
+  "updatedAt": "1650052829",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab552b"
+  },
+  "code": "EE",
+  "title": "Estonia",
+  "phone_code": "+372",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab552c"
+  },
+  "code": "ET",
+  "title": "Ethiopia",
+  "phone_code": "+251",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab552d"
+  },
+  "code": "FK",
+  "title": "Falkland Islands (Malvinas)",
+  "phone_code": "+500",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab552e"
+  },
+  "code": "FO",
+  "title": "Faroe Islands",
+  "phone_code": "+298",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab552f"
+  },
+  "code": "FJ",
+  "title": "Fiji",
+  "phone_code": "+679",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab5530"
+  },
+  "code": "FI",
+  "title": "Finland",
+  "phone_code": "+358",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab5531"
+  },
+  "code": "FR",
+  "title": "France",
+  "phone_code": "+33",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab5532"
+  },
+  "code": "GF",
+  "title": "French Guiana",
+  "phone_code": "+594",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab5533"
+  },
+  "code": "PF",
+  "title": "French Polynesia",
+  "phone_code": "+689",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab5534"
+  },
+  "code": "GA",
+  "title": "Gabon",
+  "phone_code": "+241",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab5535"
+  },
+  "code": "GM",
+  "title": "Gambia",
+  "phone_code": "+220",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab5536"
+  },
+  "code": "GE",
+  "title": "Georgia",
+  "phone_code": "+995",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab5537"
+  },
+  "code": "DE",
+  "title": "Germany",
+  "phone_code": "+49",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab5538"
+  },
+  "code": "GH",
+  "title": "Ghana",
+  "phone_code": "+233",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab5539"
+  },
+  "code": "GI",
+  "title": "Gibraltar",
+  "phone_code": "+350",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab553a"
+  },
+  "code": "GR",
+  "title": "Greece",
+  "phone_code": "+30",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab553b"
+  },
+  "code": "GL",
+  "title": "Greenland",
+  "phone_code": "+299",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab553c"
+  },
+  "code": "GD",
+  "title": "Grenada",
+  "phone_code": "+1473",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedeee946473c8ab553d"
+  },
+  "code": "GP",
+  "title": "Guadeloupe",
+  "phone_code": "+590",
+  "createdAt": "1650052830",
+  "updatedAt": "1650052830",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab553e"
+  },
+  "code": "GU",
+  "title": "Guam",
+  "phone_code": "+1671",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab553f"
+  },
+  "code": "GT",
+  "title": "Guatemala",
+  "phone_code": "+502",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab5540"
+  },
+  "code": "GG",
+  "title": "Guernsey",
+  "phone_code": "+44",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab5541"
+  },
+  "code": "GN",
+  "title": "Guinea",
+  "phone_code": "+224",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab5542"
+  },
+  "code": "GW",
+  "title": "Guinea-Bissau",
+  "phone_code": "+245",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab5543"
+  },
+  "code": "GY",
+  "title": "Guyana",
+  "phone_code": "+595",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab5544"
+  },
+  "code": "HT",
+  "title": "Haiti",
+  "phone_code": "+509",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab5545"
+  },
+  "code": "VA",
+  "title": "Holy See (Vatican City State)",
+  "phone_code": "+379",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab5546"
+  },
+  "code": "HN",
+  "title": "Honduras",
+  "phone_code": "+504",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab5547"
+  },
+  "code": "HK",
+  "title": "Hong Kong",
+  "phone_code": "+852",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab5548"
+  },
+  "code": "HU",
+  "title": "Hungary",
+  "phone_code": "+36",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab5549"
+  },
+  "code": "IS",
+  "title": "Iceland",
+  "phone_code": "+354",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab554a"
+  },
+  "code": "IN",
+  "title": "India",
+  "phone_code": "+91",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab554b"
+  },
+  "code": "ID",
+  "title": "Indonesia",
+  "phone_code": "+62",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab554c"
+  },
+  "code": "IR",
+  "title": "Iran, Islamic Republic of Persian Gulf",
+  "phone_code": "+98",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab554d"
+  },
+  "code": "IQ",
+  "title": "Iraq",
+  "phone_code": "+964",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab554e"
+  },
+  "code": "IE",
+  "title": "Ireland",
+  "phone_code": "+353",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cedfee946473c8ab554f"
+  },
+  "code": "IM",
+  "title": "Isle of Man",
+  "phone_code": "+44",
+  "createdAt": "1650052831",
+  "updatedAt": "1650052831",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab5550"
+  },
+  "code": "IL",
+  "title": "Israel",
+  "phone_code": "+972",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab5551"
+  },
+  "code": "IT",
+  "title": "Italy",
+  "phone_code": "+39",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab5552"
+  },
+  "code": "JM",
+  "title": "Jamaica",
+  "phone_code": "+1876",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab5553"
+  },
+  "code": "JP",
+  "title": "Japan",
+  "phone_code": "+81",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab5554"
+  },
+  "code": "JE",
+  "title": "Jersey",
+  "phone_code": "+44",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab5555"
+  },
+  "code": "JO",
+  "title": "Jordan",
+  "phone_code": "+962",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab5556"
+  },
+  "code": "KZ",
+  "title": "Kazakhstan",
+  "phone_code": "+77",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab5557"
+  },
+  "code": "KE",
+  "title": "Kenya",
+  "phone_code": "+254",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab5558"
+  },
+  "code": "KI",
+  "title": "Kiribati",
+  "phone_code": "+686",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab5559"
+  },
+  "code": "KP",
+  "title": "Korea, Democratic People's Republic of Korea",
+  "phone_code": "+850",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab555a"
+  },
+  "code": "KR",
+  "title": "Korea, Republic of South Korea",
+  "phone_code": "+82",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab555b"
+  },
+  "code": "KW",
+  "title": "Kuwait",
+  "phone_code": "+965",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab555c"
+  },
+  "code": "KG",
+  "title": "Kyrgyzstan",
+  "phone_code": "+996",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab555d"
+  },
+  "code": "LA",
+  "title": "Laos",
+  "phone_code": "+856",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab555e"
+  },
+  "code": "LV",
+  "title": "Latvia",
+  "phone_code": "+371",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab555f"
+  },
+  "code": "LB",
+  "title": "Lebanon",
+  "phone_code": "+961",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab5560"
+  },
+  "code": "LS",
+  "title": "Lesotho",
+  "phone_code": "+266",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab5561"
+  },
+  "code": "LR",
+  "title": "Liberia",
+  "phone_code": "+231",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee0ee946473c8ab5562"
+  },
+  "code": "LY",
+  "title": "Libyan Arab Jamahiriya",
+  "phone_code": "+218",
+  "createdAt": "1650052832",
+  "updatedAt": "1650052832",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab5563"
+  },
+  "code": "LI",
+  "title": "Liechtenstein",
+  "phone_code": "+423",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab5564"
+  },
+  "code": "LT",
+  "title": "Lithuania",
+  "phone_code": "+370",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab5565"
+  },
+  "code": "LU",
+  "title": "Luxembourg",
+  "phone_code": "+352",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab5566"
+  },
+  "code": "MO",
+  "title": "Macao",
+  "phone_code": "+853",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab5567"
+  },
+  "code": "MK",
+  "title": "Macedonia",
+  "phone_code": "+389",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab5568"
+  },
+  "code": "MG",
+  "title": "Madagascar",
+  "phone_code": "+261",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab5569"
+  },
+  "code": "MW",
+  "title": "Malawi",
+  "phone_code": "+265",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab556a"
+  },
+  "code": "MY",
+  "title": "Malaysia",
+  "phone_code": "+60",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab556b"
+  },
+  "code": "MV",
+  "title": "Maldives",
+  "phone_code": "+960",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab556c"
+  },
+  "code": "ML",
+  "title": "Mali",
+  "phone_code": "+223",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab556d"
+  },
+  "code": "MT",
+  "title": "Malta",
+  "phone_code": "+356",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab556e"
+  },
+  "code": "MH",
+  "title": "Marshall Islands",
+  "phone_code": "+692",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab556f"
+  },
+  "code": "MQ",
+  "title": "Martinique",
+  "phone_code": "+596",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab5570"
+  },
+  "code": "MR",
+  "title": "Mauritania",
+  "phone_code": "+222",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab5571"
+  },
+  "code": "MU",
+  "title": "Mauritius",
+  "phone_code": "+230",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab5572"
+  },
+  "code": "YT",
+  "title": "Mayotte",
+  "phone_code": "+262",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab5573"
+  },
+  "code": "MX",
+  "title": "Mexico",
+  "phone_code": "+52",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee1ee946473c8ab5574"
+  },
+  "code": "FM",
+  "title": "Micronesia, Federated States of Micronesia",
+  "phone_code": "+691",
+  "createdAt": "1650052833",
+  "updatedAt": "1650052833",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab5575"
+  },
+  "code": "MD",
+  "title": "Moldova",
+  "phone_code": "+373",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab5576"
+  },
+  "code": "MC",
+  "title": "Monaco",
+  "phone_code": "+377",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab5577"
+  },
+  "code": "MN",
+  "title": "Mongolia",
+  "phone_code": "+976",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab5578"
+  },
+  "code": "ME",
+  "title": "Montenegro",
+  "phone_code": "+382",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab5579"
+  },
+  "code": "MS",
+  "title": "Montserrat",
+  "phone_code": "+1664",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab557a"
+  },
+  "code": "MA",
+  "title": "Morocco",
+  "phone_code": "+212",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab557b"
+  },
+  "code": "MZ",
+  "title": "Mozambique",
+  "phone_code": "+258",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab557c"
+  },
+  "code": "MM",
+  "title": "Myanmar",
+  "phone_code": "+95",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab557d"
+  },
+  "code": "NA",
+  "title": "Namibia",
+  "phone_code": "+264",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab557e"
+  },
+  "code": "NR",
+  "title": "Nauru",
+  "phone_code": "+674",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab557f"
+  },
+  "code": "NP",
+  "title": "Nepal",
+  "phone_code": "+977",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab5580"
+  },
+  "code": "NL",
+  "title": "Netherlands",
+  "phone_code": "+31",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab5581"
+  },
+  "code": "AN",
+  "title": "Netherlands Antilles",
+  "phone_code": "+599",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab5582"
+  },
+  "code": "NC",
+  "title": "New Caledonia",
+  "phone_code": "+687",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab5583"
+  },
+  "code": "NZ",
+  "title": "New Zealand",
+  "phone_code": "+64",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab5584"
+  },
+  "code": "NI",
+  "title": "Nicaragua",
+  "phone_code": "+505",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab5585"
+  },
+  "code": "NE",
+  "title": "Niger",
+  "phone_code": "+227",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab5586"
+  },
+  "code": "NG",
+  "title": "Nigeria",
+  "phone_code": "+234",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee2ee946473c8ab5587"
+  },
+  "code": "NU",
+  "title": "Niue",
+  "phone_code": "+683",
+  "createdAt": "1650052834",
+  "updatedAt": "1650052834",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab5588"
+  },
+  "code": "NF",
+  "title": "Norfolk Island",
+  "phone_code": "+672",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab5589"
+  },
+  "code": "MP",
+  "title": "Northern Mariana Islands",
+  "phone_code": "+1670",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab558a"
+  },
+  "code": "NO",
+  "title": "Norway",
+  "phone_code": "+47",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab558b"
+  },
+  "code": "OM",
+  "title": "Oman",
+  "phone_code": "+968",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab558c"
+  },
+  "code": "PK",
+  "title": "Pakistan",
+  "phone_code": "+92",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab558d"
+  },
+  "code": "PW",
+  "title": "Palau",
+  "phone_code": "+680",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab558e"
+  },
+  "code": "PS",
+  "title": "Palestinian Territory, Occupied",
+  "phone_code": "+970",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab558f"
+  },
+  "code": "PA",
+  "title": "Panama",
+  "phone_code": "+507",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab5590"
+  },
+  "code": "PG",
+  "title": "Papua New Guinea",
+  "phone_code": "+675",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab5591"
+  },
+  "code": "PY",
+  "title": "Paraguay",
+  "phone_code": "+595",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab5592"
+  },
+  "code": "PE",
+  "title": "Peru",
+  "phone_code": "+51",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab5593"
+  },
+  "code": "PH",
+  "title": "Philippines",
+  "phone_code": "+63",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab5594"
+  },
+  "code": "PN",
+  "title": "Pitcairn",
+  "phone_code": "+872",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab5595"
+  },
+  "code": "PL",
+  "title": "Poland",
+  "phone_code": "+48",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab5596"
+  },
+  "code": "PT",
+  "title": "Portugal",
+  "phone_code": "+351",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab5597"
+  },
+  "code": "PR",
+  "title": "Puerto Rico",
+  "phone_code": "+1939",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab5598"
+  },
+  "code": "QA",
+  "title": "Qatar",
+  "phone_code": "+974",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee3ee946473c8ab5599"
+  },
+  "code": "RO",
+  "title": "Romania",
+  "phone_code": "+40",
+  "createdAt": "1650052835",
+  "updatedAt": "1650052835",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab559a"
+  },
+  "code": "RU",
+  "title": "Russia",
+  "phone_code": "+7",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab559b"
+  },
+  "code": "RW",
+  "title": "Rwanda",
+  "phone_code": "+250",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab559c"
+  },
+  "code": "RE",
+  "title": "Reunion",
+  "phone_code": "+262",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab559d"
+  },
+  "code": "BL",
+  "title": "Saint Barthelemy",
+  "phone_code": "+590",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab559e"
+  },
+  "code": "SH",
+  "title": "Saint Helena, Ascension and Tristan Da Cunha",
+  "phone_code": "+290",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab559f"
+  },
+  "code": "KN",
+  "title": "Saint Kitts and Nevis",
+  "phone_code": "+1869",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab55a0"
+  },
+  "code": "LC",
+  "title": "Saint Lucia",
+  "phone_code": "+1758",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab55a1"
+  },
+  "code": "MF",
+  "title": "Saint Martin",
+  "phone_code": "+590",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab55a2"
+  },
+  "code": "PM",
+  "title": "Saint Pierre and Miquelon",
+  "phone_code": "+508",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab55a3"
+  },
+  "code": "VC",
+  "title": "Saint Vincent and the Grenadines",
+  "phone_code": "+1784",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab55a4"
+  },
+  "code": "WS",
+  "title": "Samoa",
+  "phone_code": "+685",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab55a5"
+  },
+  "code": "SM",
+  "title": "San Marino",
+  "phone_code": "+378",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab55a6"
+  },
+  "code": "ST",
+  "title": "Sao Tome and Principe",
+  "phone_code": "+239",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab55a7"
+  },
+  "code": "SA",
+  "title": "Saudi Arabia",
+  "phone_code": "+966",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab55a8"
+  },
+  "code": "SN",
+  "title": "Senegal",
+  "phone_code": "+221",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab55a9"
+  },
+  "code": "RS",
+  "title": "Serbia",
+  "phone_code": "+381",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab55aa"
+  },
+  "code": "SC",
+  "title": "Seychelles",
+  "phone_code": "+248",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee4ee946473c8ab55ab"
+  },
+  "code": "SL",
+  "title": "Sierra Leone",
+  "phone_code": "+232",
+  "createdAt": "1650052836",
+  "updatedAt": "1650052836",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55ac"
+  },
+  "code": "SG",
+  "title": "Singapore",
+  "phone_code": "+65",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55ad"
+  },
+  "code": "SK",
+  "title": "Slovakia",
+  "phone_code": "+421",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55ae"
+  },
+  "code": "SI",
+  "title": "Slovenia",
+  "phone_code": "+386",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55af"
+  },
+  "code": "SB",
+  "title": "Solomon Islands",
+  "phone_code": "+677",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55b0"
+  },
+  "code": "SO",
+  "title": "Somalia",
+  "phone_code": "+252",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55b1"
+  },
+  "code": "ZA",
+  "title": "South Africa",
+  "phone_code": "+27",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55b2"
+  },
+  "code": "SS",
+  "title": "South Sudan",
+  "phone_code": "+211",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55b3"
+  },
+  "code": "GS",
+  "title": "South Georgia and the South Sandwich Islands",
+  "phone_code": "+500",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55b4"
+  },
+  "code": "ES",
+  "title": "Spain",
+  "phone_code": "+34",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55b5"
+  },
+  "code": "LK",
+  "title": "Sri Lanka",
+  "phone_code": "+94",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55b6"
+  },
+  "code": "SD",
+  "title": "Sudan",
+  "phone_code": "+249",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55b7"
+  },
+  "code": "SR",
+  "title": "Suriname",
+  "phone_code": "+597",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55b8"
+  },
+  "code": "SJ",
+  "title": "Svalbard and Jan Mayen",
+  "phone_code": "+47",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55b9"
+  },
+  "code": "SZ",
+  "title": "Swaziland",
+  "phone_code": "+268",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55ba"
+  },
+  "code": "SE",
+  "title": "Sweden",
+  "phone_code": "+46",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55bb"
+  },
+  "code": "CH",
+  "title": "Switzerland",
+  "phone_code": "+41",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55bc"
+  },
+  "code": "SY",
+  "title": "Syrian Arab Republic",
+  "phone_code": "+963",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55bd"
+  },
+  "code": "TW",
+  "title": "Taiwan",
+  "phone_code": "+886",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee5ee946473c8ab55be"
+  },
+  "code": "TJ",
+  "title": "Tajikistan",
+  "phone_code": "+992",
+  "createdAt": "1650052837",
+  "updatedAt": "1650052837",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55bf"
+  },
+  "code": "TZ",
+  "title": "Tanzania, United Republic of Tanzania",
+  "phone_code": "+255",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55c0"
+  },
+  "code": "TH",
+  "title": "Thailand",
+  "phone_code": "+66",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55c1"
+  },
+  "code": "TL",
+  "title": "Timor-Leste",
+  "phone_code": "+670",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55c2"
+  },
+  "code": "TG",
+  "title": "Togo",
+  "phone_code": "+228",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55c3"
+  },
+  "code": "TK",
+  "title": "Tokelau",
+  "phone_code": "+690",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55c4"
+  },
+  "code": "TO",
+  "title": "Tonga",
+  "phone_code": "+676",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55c5"
+  },
+  "code": "TT",
+  "title": "Trinidad and Tobago",
+  "phone_code": "+1868",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55c6"
+  },
+  "code": "TN",
+  "title": "Tunisia",
+  "phone_code": "+216",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55c7"
+  },
+  "code": "TR",
+  "title": "Turkey",
+  "phone_code": "+90",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55c8"
+  },
+  "code": "TM",
+  "title": "Turkmenistan",
+  "phone_code": "+993",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55c9"
+  },
+  "code": "TC",
+  "title": "Turks and Caicos Islands",
+  "phone_code": "+1649",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55ca"
+  },
+  "code": "TV",
+  "title": "Tuvalu",
+  "phone_code": "+688",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55cb"
+  },
+  "code": "UG",
+  "title": "Uganda",
+  "phone_code": "+256",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55cc"
+  },
+  "code": "UA",
+  "title": "Ukraine",
+  "phone_code": "+380",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55cd"
+  },
+  "code": "AE",
+  "title": "United Arab Emirates",
+  "phone_code": "+971",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55ce"
+  },
+  "code": "GB",
+  "title": "United Kingdom",
+  "phone_code": "+44",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55cf"
+  },
+  "code": "US",
+  "title": "United States",
+  "phone_code": "+1",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55d0"
+  },
+  "code": "UY",
+  "title": "Uruguay",
+  "phone_code": "+598",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee6ee946473c8ab55d1"
+  },
+  "code": "UZ",
+  "title": "Uzbekistan",
+  "phone_code": "+998",
+  "createdAt": "1650052838",
+  "updatedAt": "1650052838",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee7ee946473c8ab55d2"
+  },
+  "code": "VU",
+  "title": "Vanuatu",
+  "phone_code": "+678",
+  "createdAt": "1650052839",
+  "updatedAt": "1650052839",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee7ee946473c8ab55d3"
+  },
+  "code": "VE",
+  "title": "Venezuela, Bolivarian Republic of Venezuela",
+  "phone_code": "+58",
+  "createdAt": "1650052839",
+  "updatedAt": "1650052839",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee7ee946473c8ab55d4"
+  },
+  "code": "VG",
+  "title": "Virgin Islands, British",
+  "phone_code": "+1284",
+  "createdAt": "1650052839",
+  "updatedAt": "1650052839",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee7ee946473c8ab55d5"
+  },
+  "code": "VI",
+  "title": "Virgin Islands, U.S.",
+  "phone_code": "+1340",
+  "createdAt": "1650052839",
+  "updatedAt": "1650052839",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee7ee946473c8ab55d6"
+  },
+  "code": "WF",
+  "title": "Wallis and Futuna",
+  "phone_code": "+681",
+  "createdAt": "1650052839",
+  "updatedAt": "1650052839",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee7ee946473c8ab55d7"
+  },
+  "code": "YE",
+  "title": "Yemen",
+  "phone_code": "+967",
+  "createdAt": "1650052839",
+  "updatedAt": "1650052839",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee7ee946473c8ab55d8"
+  },
+  "code": "ZM",
+  "title": "Zambia",
+  "phone_code": "+260",
+  "createdAt": "1650052839",
+  "updatedAt": "1650052839",
+  "deletedAt": null
+},{
+  "_id": {
+    "$oid": "6259cee7ee946473c8ab55d9"
+  },
+  "code": "ZW",
+  "title": "Zimbabwe",
+  "phone_code": "+263",
+  "createdAt": "1650052839",
+  "updatedAt": "1650052839",
+  "deletedAt": null
+}]

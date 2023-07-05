@@ -1,0 +1,2071 @@
+version: "3.8"
+
+services:
+  api:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: apiService/api
+      PORT: 4070
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      #        order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      #        order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    labels:
+      - "my.zone=openlivenftprod"
+      - "traefik.enable=true"
+      - "traefik.http.routers.api-gw.rule=PathPrefix(`/`)"
+      - "traefik.http.services.api-gw.loadbalancer.server.port=4070"
+    networks:
+      - internal
+  blockchain:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: blockchainService/blockchain
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+    networks:
+      - internal
+  chainWalletAdmin:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: blockchainService/chainWalletAdmin
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+    networks:
+      - internal
+  country:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: countryService/country
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        # order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        # order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  chainWallet:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: blockchainService/chainWallet
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      #  order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+    #     order: start-first
+
+    #restart_policy:
+    # condition: on-failure
+    #delay: 3s
+    #max_attempts: 10
+    #window: 120s
+
+    networks:
+      - internal
+  handleTransactionTemp:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: cronjobService/handleTransactionTemp
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      #   order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      #  order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  cronGetRate:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: currencyService/getRate
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        # order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  currency:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: currencyService/currency
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  currencyAdmin:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: currencyService/currencyAdmin
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  currencyAttr:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: currencyService/currencyAttr
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  customers:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: customerService/customer
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        # order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  customerCode:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: customerService/customerCode
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  customerKyc:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: customerService/customerKyc
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  customerProfile:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: customerService/customerProfile
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  customerToken:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: customerService/customerToken
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  customerHistory:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: customerService/customerHistory
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        # order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  customerAdmin:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: customerService/customerAdmin
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        # order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  customerBinaryAdmin:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: customerService/binary
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  mail:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: mailService/mail
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  wallet:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: walletService/wallet
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  walletChain:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: walletService/walletChain
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  walletAdmin:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: walletService/walletAdmin
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  transactionQueue:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: queueService/transactionQueue
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  withdrawQueue:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: queueService/withdrawQueue
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  settingService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: settingService/setting
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  TeamWalletService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: settingService/teamWallet
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  TeamWalletAdminService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: settingService/teamWalletAdmin
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  fileService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: fileService/file
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        #order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        #order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  transaction:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: transactionService/transaction
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      #    order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      #   order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  transactionCode:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: transactionService/transactionCode
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        # order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      #  order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  transactionTemp:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: transactionService/transactionTemp
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        # order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        # order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  transactionAdmin:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: transactionService/transactionAdmin
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        # order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        # order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  ClaimDepositAdmin:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: transactionService/claimDepositAdmin
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        # order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        # order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  ClaimDepositQueue:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: transactionService/claimDepositQueue
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        # order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        # order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  userService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: userService/user
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        # order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        # order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  userToken:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: userService/userToken
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        # order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        # order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  report:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: reportService/report
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        # order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        # order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  reportAdmin:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: reportService/reportAdmin
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        # order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        # order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  HookDepositTTSService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: hookService/hookDepositTTS
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        # order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        # order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  staticData:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: staticService/staticData
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        # order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        # order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  # orderService:
+  #   image: 172.31.2.30:5000/openlivenft-backend-prod
+  #   env_file:
+  #     - env/.env
+  #   environment:
+  #     SERVICES: stakeService/order
+  #   depends_on:
+  #     - nats
+  #   deploy:
+  #     mode: global
+  #     rollback_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: continue
+  #       monitor: 1m
+  #       # order: start-first
+
+  #     update_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: rollback
+  #       monitor: 5s
+  #       max_failure_ratio: 0.3
+  #       # order: start-first
+
+  #     restart_policy:
+  #       condition: on-failure
+  #       delay: 3s
+  #       max_attempts: 10
+  #       window: 120s
+
+  #   networks:
+  #     - internal
+  # packageService:
+  #   image: 172.31.2.30:5000/openlivenft-backend-prod
+  #   env_file:
+  #     - env/.env
+  #   environment:
+  #     SERVICES: stakeService/package
+  #   depends_on:
+  #     - nats
+  #   deploy:
+  #     mode: global
+  #     rollback_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: continue
+  #       monitor: 1m
+  #       # order: start-first
+
+  #     update_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: rollback
+  #       monitor: 5s
+  #       max_failure_ratio: 0.3
+  #       # order: start-first
+
+  #     restart_policy:
+  #       condition: on-failure
+  #       delay: 3s
+  #       max_attempts: 10
+  #       window: 120s
+
+  #   networks:
+  #     - internal
+  # packageAdminService:
+  #   image: 172.31.2.30:5000/openlivenft-backend-prod
+  #   env_file:
+  #     - env/.env
+  #   environment:
+  #     SERVICES: stakeService/packageAdmin
+  #   depends_on:
+  #     - nats
+  #   deploy:
+  #     mode: global
+  #     rollback_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: continue
+  #       monitor: 1m
+  #       # order: start-first
+
+  #     update_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: rollback
+  #       monitor: 5s
+  #       max_failure_ratio: 0.3
+  #       # order: start-first
+
+  #     restart_policy:
+  #       condition: on-failure
+  #       delay: 3s
+  #       max_attempts: 10
+  #       window: 120s
+
+  #   networks:
+  #     - internal
+  # packageTermService:
+  #   image: 172.31.2.30:5000/openlivenft-backend-prod
+  #   env_file:
+  #     - env/.env
+  #   environment:
+  #     SERVICES: stakeService/packageTerm
+  #   depends_on:
+  #     - nats
+  #   deploy:
+  #     mode: global
+  #     rollback_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: continue
+  #       monitor: 1m
+  #       # order: start-first
+
+  #     update_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: rollback
+  #       monitor: 5s
+  #       max_failure_ratio: 0.3
+  #       # order: start-first
+
+  #     restart_policy:
+  #       condition: on-failure
+  #       delay: 3s
+  #       max_attempts: 10
+  #       window: 120s
+
+  #   networks:
+  #     - internal
+  # packageTermAdminService:
+  #   image: 172.31.2.30:5000/openlivenft-backend-prod
+  #   env_file:
+  #     - env/.env
+  #   environment:
+  #     SERVICES: stakeService/packageTermAdmin
+  #   depends_on:
+  #     - nats
+  #   deploy:
+  #     mode: global
+  #     rollback_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: continue
+  #       monitor: 1m
+  #       # order: start-first
+
+  #     update_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: rollback
+  #       monitor: 5s
+  #       max_failure_ratio: 0.3
+  #       # order: start-first
+
+  #     restart_policy:
+  #       condition: on-failure
+  #       delay: 3s
+  #       max_attempts: 10
+  #       window: 120s
+
+  #   networks:
+  #     - internal
+  # rewardService:
+  #   image: 172.31.2.30:5000/openlivenft-backend-prod
+  #   env_file:
+  #     - env/.env
+  #   environment:
+  #     SERVICES: stakeService/reward
+  #   depends_on:
+  #     - nats
+  #   deploy:
+  #     mode: global
+  #     rollback_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: continue
+  #       monitor: 1m
+  #       # order: start-first
+
+  #     update_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: rollback
+  #       monitor: 5s
+  #       max_failure_ratio: 0.3
+  #       # order: start-first
+
+  #     restart_policy:
+  #       condition: on-failure
+  #       delay: 3s
+  #       max_attempts: 10
+  #       window: 120s
+
+  #   networks:
+  #     - internal
+  # rewardAdminService:
+  #   image: 172.31.2.30:5000/openlivenft-backend-prod
+  #   env_file:
+  #     - env/.env
+  #   environment:
+  #     SERVICES: stakeService/rewardAdmin
+  #   depends_on:
+  #     - nats
+  #   deploy:
+  #     mode: global
+  #     rollback_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: continue
+  #       monitor: 1m
+  #       # order: start-first
+
+  #     update_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: rollback
+  #       monitor: 5s
+  #       max_failure_ratio: 0.3
+  #       # order: start-first
+
+  #     restart_policy:
+  #       condition: on-failure
+  #       delay: 3s
+  #       max_attempts: 10
+  #       window: 120s
+
+  #   networks:
+  #     - internal
+  # commissionAdminService:
+  #   image: 172.31.2.30:5000/openlivenft-backend-prod
+  #   env_file:
+  #     - env/.env
+  #   environment:
+  #     SERVICES: stakeService/commissionAdmin
+  #   depends_on:
+  #     - nats
+  #   deploy:
+  #     mode: global
+  #     rollback_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: continue
+  #       monitor: 1m
+  #       # order: start-first
+
+  #     update_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: rollback
+  #       monitor: 5s
+  #       max_failure_ratio: 0.3
+  #       # order: start-first
+
+  #     restart_policy:
+  #       condition: on-failure
+  #       delay: 3s
+  #       max_attempts: 10
+  #       window: 120s
+
+  #   networks:
+  #     - internal
+  # commissionService:
+  #   image: 172.31.2.30:5000/openlivenft-backend-prod
+  #   env_file:
+  #     - env/.env
+  #   environment:
+  #     SERVICES: stakeService/commission
+  #   depends_on:
+  #     - nats
+  #   deploy:
+  #     mode: global
+  #     rollback_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: continue
+  #       monitor: 1m
+  #       # order: start-first
+
+  #     update_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: rollback
+  #       monitor: 5s
+  #       max_failure_ratio: 0.3
+  #       # order: start-first
+
+  #     restart_policy:
+  #       condition: on-failure
+  #       delay: 3s
+  #       max_attempts: 10
+  #       window: 120s
+
+  #   networks:
+  #     - internal
+  # cronRedeemStaking:
+  #   image: 172.31.2.30:5000/openlivenft-backend-prod
+  #   env_file:
+  #     - env/.env
+  #   environment:
+  #     SERVICES: stakeService/cronRedeemStaking
+  #   depends_on:
+  #     - nats
+  #   deploy:
+  #     mode: global
+  #     rollback_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: continue
+  #       monitor: 1m
+  #       # order: start-first
+
+  #     update_config:
+  #       parallelism: 3
+  #       delay: 10s
+  #       failure_action: rollback
+  #       monitor: 5s
+  #       max_failure_ratio: 0.3
+  #       #order: start-first
+
+  #     restart_policy:
+  #       condition: on-failure
+  #       delay: 3s
+  #       max_attempts: 10
+  #       window: 120s
+
+  #   networks:
+  #     - internal
+  investPackageService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: investmentService/investPackage
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        # order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        # order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  CronjobBonusInvestService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: investmentService/cronjobBonusInvest
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        # order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        # order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  investPackageAdminService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: investmentService/investPackageAdmin
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+    networks:
+      - internal
+  investmentService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: investmentService/investment
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+    networks:
+      - internal
+  investmentAdminService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: investmentService/investmentAdmin
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+    networks:
+      - internal
+  directCommissionAdminService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: investmentService/directCommissionAdmin
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+    networks:
+      - internal
+  directCommissionService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: investmentService/directCommission
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+    networks:
+      - internal
+  InvestmentStatisticService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: investmentService/investmentStatistic
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+    networks:
+      - internal
+  InvestmentQueueService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: investmentService/investmentQueue
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+    networks:
+      - internal
+  CronjobEmptyStatisticService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: investmentService/cronjobEmptyStatistic
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+    networks:
+      - internal
+  SystemCommissionService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: systemService/systemCommission
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+    networks:
+      - internal
+  SystemCommissionAdminService:
+    image: 172.31.2.30:5000/openlivenft-backend-prod
+    env_file:
+      - env/.env
+    environment:
+      SERVICES: systemService/systemCommissionAdmin
+    depends_on:
+      - nats
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+    networks:
+      - internal
+  nats:
+    image: nats:2
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+        order: start-first
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+        order: start-first
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+    networks:
+      - internal
+  traefik:
+    image: traefik:v2.8.2
+    command:
+      - "--api.insecure=true" # Don't do that in production!
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--providers.docker.constraints=Label(`my.zone`, `openlivenftprod`)"
+      - "--experimental.plugins.traefik-get-real-ip.modulename=github.com/Paxxs/traefik-get-real-ip"
+      - "--experimental.plugins.traefik-get-real-ip.version=v1.0.2"
+    ports:
+      - 4070:80
+      - 4071:8080
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    networks:
+      - internal
+      - default
+    deploy:
+      mode: global
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 1m
+
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: rollback
+        monitor: 5s
+        max_failure_ratio: 0.3
+
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 10
+        window: 120s
+
+networks:
+  internal:
+    driver: overlay
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.36.0.0/16"
+  default:
+    driver: overlay
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.37.0.0/16"
+volumes:
+  data:
