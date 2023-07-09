@@ -1,0 +1,10 @@
+{
+  "apps": [
+      {
+          "name": "OpenliveV3-Backend",
+          "cwd": "./dist",
+          "script": "./node_modules/moleculer/bin/moleculer-runner.js",
+          "args": "--config moleculer.config.js --envfile ./env/.env services"
+      }
+  ]
+}
